@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link href="style.css" rel="stylesheet">
+      <title>Lomadee</title>
+  </head>
+	<body>
+
+    <div class="Widget350x130" id="all_holder">
+      <ul class="offers" id="offers-0">
+        <li class="loading">Carregando...</li>
+      </ul>
+    </div>
+
+    <script src="balao.js"></script>
+    <script>
+      var
+        hash = window.location.href.split("#"),
+        query = window.location.search.substring(1),
+        vars = (hash[1] || query || "").split("&"),
+        options = {}
+      ;
+
+      for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          options[pair[0]] = pair[1];
+      }
+      __LomadeeBalaoJs.renderInside(options);
+    </script>
+	</body>
+</html>
