@@ -1,7 +1,7 @@
 import os
 import re
 
-output_file_name = "./dist/balao-lomadee-0.9.0.min.js"
+output_file_name = "./dist/balao-lomadee.min.js"
 
 # minimize CSS using YUI Compressor - stores at ./staging/
 os.system("java -jar ./tools/yuicompressor-2.4.8.jar ./src/style.css -o ./dist/style-min.css -v")

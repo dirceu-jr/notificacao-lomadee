@@ -101,33 +101,6 @@ var __LomadeeBalaoJs = (function () {
     }
 
 
-    function viewPortHeight() {
-        return window.innerHeight ||
-               document_element.clientHeight ||
-               document_body.clientHeight
-        ;
-    }
-
-
-    function documentHeight() {
-        return Math.max(
-            document_body.scrollHeight,
-            document_element.scrollHeight,
-            document_body.offsetHeight,
-            document_element.offsetHeight
-        );
-    }
-
-
-    function toffset2() {
-        return Math.max(
-            (window.pageYOffset ? window.pageYOffset : 0),
-            document_element.scrollTop,
-            document_body.scrollTop
-        );
-    }
-
-
     function getCookie(cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
