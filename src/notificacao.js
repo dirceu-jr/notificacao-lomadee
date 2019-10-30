@@ -74,10 +74,10 @@ var __LomadeeNotificacaoJS = (function() {
                     errorHandler && errorHandler(status);
                 }
             }
-        };
+        }
         xhr.ontimeout = function() {
             timeoutHandler && timeoutHandler();
-        };
+        }
         xhr.timeout = 10000;
         xhr.send();
     }
@@ -92,7 +92,8 @@ var __LomadeeNotificacaoJS = (function() {
                 s = currency.mi,
                 c = currency.cent,
                 re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
-                num = parseInt(number).toFixed(Math.max(0, ~~n));
+                num = parseInt(number).toFixed(Math.max(0, ~~n))
+            ;
 
             return currency.abrv + (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ','));
         } else {
