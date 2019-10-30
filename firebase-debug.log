@@ -23,3 +23,29 @@
 [debug] [2019-10-30T01:47:01.688Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
+[info] Shutting down...
+[debug] [2019-10-30T02:14:55.517Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T02:14:55.519Z] Command:       /usr/local/Cellar/node/12.10.0/bin/node /usr/local/bin/firebase serve
+[debug] [2019-10-30T02:14:55.519Z] CLI Version:   7.6.2
+[debug] [2019-10-30T02:14:55.520Z] Platform:      darwin
+[debug] [2019-10-30T02:14:55.520Z] Node Version:  v12.10.0
+[debug] [2019-10-30T02:14:55.520Z] Time:          Tue Oct 29 2019 23:14:55 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2019-10-30T02:14:55.521Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T02:14:55.521Z] 
+[debug] [2019-10-30T02:14:55.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T02:14:55.532Z] > authorizing via signed-in user
+[debug] [2019-10-30T02:14:55.533Z] [iam] checking project notificacao-lomadee for permissions ["firebase.projects.get"]
+[debug] [2019-10-30T02:14:55.534Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/notificacao-lomadee:testIamPermissions  
+
+[debug] [2019-10-30T02:14:56.761Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T02:14:56.764Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee  
+ 
+[debug] [2019-10-30T02:14:57.452Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/dirceupaukajunior/Desktop/notificacao-lomadee'...
+[info] 
+[debug] [2019-10-30T02:14:57.455Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee/webApps/-/config  
+ 
+[debug] [2019-10-30T02:14:58.068Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
