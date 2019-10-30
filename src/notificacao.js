@@ -102,9 +102,11 @@ var __LomadeeNotificacaoJS = (function() {
 
 
     function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
+        var
+            name = cname + "=",
+            decodedCookie = decodeURIComponent(document.cookie),
+            ca = decodedCookie.split(';')
+        ;
         for (var i = 0; i < ca.length; i++) {
             var c = ca[i];
             while (c.charAt(0) == ' ') {
@@ -197,12 +199,12 @@ var __LomadeeNotificacaoJS = (function() {
 
                 render.push(
                     "<li>",
-                    "<a href='", o[i].link, "' target='_blank'>",
-                    "<div class='thumb'><img src='", thumbnail, "' /></div>",
-                    "<h2>", name.slice(0, 40), "...</h2>",
-                    "<div class='price'>", price, "</div>",
-                    "<div class='parcelas'>", installment, "</div>",
-                    "</a>",
+                        "<a href='", o[i].link, "' target='_blank'>",
+                            "<div class='thumb'><img src='", thumbnail, "' /></div>",
+                            "<h2>", name.slice(0, 40), "...</h2>",
+                            "<div class='price'>", price, "</div>",
+                            "<div class='parcelas'>", installment, "</div>",
+                        "</a>",
                     "</li>"
                 );
             }
