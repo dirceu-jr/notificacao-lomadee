@@ -3,7 +3,7 @@
   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <link href="style.css" rel="stylesheet">
-      <title>Lomadee</title>
+      <title>Notificação Lomadee</title>
   </head>
 	<body>
 
@@ -13,7 +13,7 @@
       </ul>
     </div>
 
-    <script src="balao.js"></script>
+    <script src="notificacao.js"></script>
     <script>
       var
         hash = window.location.href.split("#"),
@@ -26,7 +26,7 @@
           var pair = vars[i].split("=");
           options[pair[0]] = pair[1];
       }
-      __LomadeeBalaoJs.renderInside(options);
+      __LomadeeNotificacaoJS.renderInside(options);
     </script>
 	</body>
 </html>

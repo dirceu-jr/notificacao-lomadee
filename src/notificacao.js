@@ -1,4 +1,4 @@
-var __LomadeeBalaoJs = (function () {
+var __LomadeeNotificacaoJS = (function () {
 
     /*!
     * Morpheus - A Brilliant Animator
@@ -22,7 +22,7 @@ var __LomadeeBalaoJs = (function () {
         document_element = document.documentElement,
         iframe = undefined,
         div = undefined,
-        path = (document.location.href.match(/file:\//) ? './frameads.html' : 'URL-PASTA'),
+        path = (document.location.href.match(/file:\//) ? './frameads.html' : 'http://localhost:5000/frameads.html'),
         options = {},
         categories_order = ['bestsellers', 77, 2852, 3673, 3671, 6424, 138, 6058, 126, 3606, 10232, 3661]
     ;
@@ -184,7 +184,7 @@ var __LomadeeBalaoJs = (function () {
                 var
                     abrv = "BRL",
                     installment = (o[i].installment && o[i].installment.quantity) ?
-                        (o[i].installment.quantity + " x " + formatMoney(o[i].installment.value, abrv)) : "&nbsp;",
+                        ("ou " + o[i].installment.quantity + " x " + formatMoney(o[i].installment.value, abrv)) : "&nbsp;",
                     price = formatMoney(o[i].price, abrv),
                     name = o[i].name
                 ;
@@ -269,7 +269,7 @@ var __LomadeeBalaoJs = (function () {
     }
 
 
-    function renderBalao(input_options) {        
+    function renderNotificacao(input_options) {        
         options = input_options;
 
         div = document.createElement('div');
@@ -284,7 +284,7 @@ var __LomadeeBalaoJs = (function () {
         ].join('');
 
         div.innerHTML = [
-            "<div id='__close_balao_lomadee' style='", close_style, "'>",
+            "<div id='__close_notificacao_lomadee' style='", close_style, "'>",
                 "Anúncio ⓧ",
             "</div>"].join('')
         ;
@@ -304,7 +304,7 @@ var __LomadeeBalaoJs = (function () {
 
         document_body.appendChild(div);
 
-        var close_dom = document.getElementById('__close_balao_lomadee');
+        var close_dom = document.getElementById('__close_notificacao_lomadee');
 
         // close button event handler
         close_dom.addEventListener('click', function() {
@@ -371,12 +371,12 @@ var __LomadeeBalaoJs = (function () {
 
 
     return {
-        renderBalao: renderBalao,
+        renderNotificacao: renderNotificacao,
         renderInside: renderInside
     }
 
 })();
 
-if (typeof _LomadeeBalaoJS == 'object') {
-    __LomadeeBalaoJs.renderBalao(_LomadeeBalaoJS);
+if (typeof _LomadeeNotificacaoJS == 'object') {
+    __LomadeeNotificacaoJS.renderNotificacao(_LomadeeNotificacaoJS);
 }

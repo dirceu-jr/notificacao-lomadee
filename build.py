@@ -1,21 +1,21 @@
 import os
 import re
 
-output_file_name = "./dist/balao-lomadee.min.js"
+output_file_name = "./public/notificacao-lomadee.min.js"
 
 # minimize CSS using YUI Compressor - stores at ./staging/
-os.system("java -jar ./tools/yuicompressor-2.4.8.jar ./src/style.css -o ./dist/style-min.css -v")
+os.system("java -jar ./tools/yuicompressor-2.4.8.jar ./src/style.css -o ./public/style-min.css -v")
 
 # minimize JS using Closure Compiler - stores at ./staging/
-os.system("java -jar ./tools/closure-compiler-v20190819.jar --js ./src/balao.js --js_output_file " + output_file_name)
+os.system("java -jar ./tools/closure-compiler-v20190929.jar --js ./src/notificacao.js --js_output_file " + output_file_name)
 
 # open css file
-css_file = open("./dist/style-min.css", "r")
+css_file = open("./public/style-min.css", "r")
 css_content = css_file.read()
 css_file.close()
 
 # open frameads.html
-frameads_file = open("./dist/frameads.html", "r+")
+frameads_file = open("./public/frameads.html", "r+")
 frameads_content = frameads_file.read()
 
 link_el = r"\<style\>(.*)<\/style\>"
