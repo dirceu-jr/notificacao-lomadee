@@ -22,7 +22,7 @@ var __LomadeeNotificacaoJS = (function() {
         document_element = document.documentElement,
         iframe = undefined,
         div = undefined,
-        path = (document.location.href.match(/file:\//) ? './frameads.html' : 'http://localhost:5000/frameads.html'),
+        path = (document.location.href.match(/file:\//) ? './frameads.html' : 'http://192.168.15.2:5000/frameads.html'),
         options = {},
         categories_order = ['bestsellers', 77, 2852, 3673, 3671, 6424, 138, 6058, 126, 3606, 10232, 3661]
     ;
@@ -184,12 +184,13 @@ var __LomadeeNotificacaoJS = (function() {
             len = 1;
 
             for (var i = 0; i < len; i++) {
+                // console.log(o[i].product);
                 var
                     abrv = "BRL",
                     installment = (o[i].installment && o[i].installment.quantity) ?
-                        ("ou " + o[i].installment.quantity + " x " + formatMoney(o[i].installment.value, abrv)) : "&nbsp;",
+                        ("ou " + o[i].installment.quantity + "x de " + formatMoney(o[i].installment.value, abrv)) : "&nbsp;",
                     price = formatMoney(o[i].price, abrv),
-                    name = o[i].name
+                    name = o[i].product.shortName || o[i].name
                 ;
 
                 if (o[i].product.thumbnail && o[i].product.thumbnail.otherFormats[0]) {
@@ -202,7 +203,7 @@ var __LomadeeNotificacaoJS = (function() {
                     "<li>",
                         "<a href='", o[i].link, "' target='_blank'>",
                             "<div class='thumb'><img src='", thumbnail, "' /></div>",
-                            "<h2>", name.slice(0, 40), "...</h2>",
+                            "<h2>", name, "</h2>",
                             "<div class='price'>", price, "</div>",
                             "<div class='parcelas'>", installment, "</div>",
                         "</a>",
@@ -266,7 +267,9 @@ var __LomadeeNotificacaoJS = (function() {
 
         // console.log(scroll_percent);
 
-        if (scroll_percent > 40 && opened !== 1) {
+        // 40 is fine for Desktop but not for mobile!
+        // let's try with 20%
+        if (scroll_percent > 20 && opened !== 1) {
             openAd();
         }
     }
@@ -282,13 +285,14 @@ var __LomadeeNotificacaoJS = (function() {
             "float: right;",
             "font-size: 12px;",
             "color: #0078a4;",
-            "padding: 4px;",
+            "padding: 4px 6px 4px;",
             "cursor: pointer;"
         ].join('');
 
+        // ⓧ looks good in MacOS not in Win10
         div.innerHTML = [
             "<div id='__close_notificacao_lomadee' style='", close_style, "'>",
-            "Anúncio ⓧ",
+                "Ad ✕",
             "</div>"].join('')
             ;
 
