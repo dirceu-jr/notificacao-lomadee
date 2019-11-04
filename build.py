@@ -26,6 +26,9 @@ regex = re.compile(link_el)
 # replace
 frameads_content = re.sub(regex, style, frameads_content)
 
+# remove minified css
+os.system("rm ./public/style-min.css")
+
 # erase content
 frameads_file.seek(0)
 frameads_file.truncate()

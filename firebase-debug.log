@@ -1,51 +1,25 @@
-[debug] [2019-10-30T01:46:57.641Z] ----------------------------------------------------------------------
-[debug] [2019-10-30T01:46:57.644Z] Command:       /usr/local/Cellar/node/12.10.0/bin/node /usr/local/bin/firebase serve
-[debug] [2019-10-30T01:46:57.644Z] CLI Version:   7.6.2
-[debug] [2019-10-30T01:46:57.644Z] Platform:      darwin
-[debug] [2019-10-30T01:46:57.644Z] Node Version:  v12.10.0
-[debug] [2019-10-30T01:46:57.645Z] Time:          Tue Oct 29 2019 22:46:57 GMT-0300 (Horário Padrão de Brasília)
-[debug] [2019-10-30T01:46:57.645Z] ----------------------------------------------------------------------
-[debug] [2019-10-30T01:46:57.645Z] 
-[debug] [2019-10-30T01:46:57.654Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-10-30T01:46:57.655Z] > authorizing via signed-in user
-[debug] [2019-10-30T01:46:57.655Z] [iam] checking project notificacao-lomadee for permissions ["firebase.projects.get"]
-[debug] [2019-10-30T01:46:57.657Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/notificacao-lomadee:testIamPermissions  
+[debug] [2019-11-04T01:11:37.116Z] ----------------------------------------------------------------------
+[debug] [2019-11-04T01:11:37.118Z] Command:       /usr/local/Cellar/node/12.10.0/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-04T01:11:37.118Z] CLI Version:   7.6.2
+[debug] [2019-11-04T01:11:37.118Z] Platform:      darwin
+[debug] [2019-11-04T01:11:37.118Z] Node Version:  v12.10.0
+[debug] [2019-11-04T01:11:37.119Z] Time:          Sun Nov 03 2019 23:11:37 GMT-0200 (Horário de Verão de Brasília)
+[debug] [2019-11-04T01:11:37.119Z] ----------------------------------------------------------------------
+[debug] [2019-11-04T01:11:37.120Z] 
+[debug] [2019-11-04T01:11:37.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-04T01:11:37.130Z] > authorizing via signed-in user
+[debug] [2019-11-04T01:11:37.131Z] [iam] checking project notificacao-lomadee for permissions ["firebase.projects.get"]
+[debug] [2019-11-04T01:11:37.133Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/notificacao-lomadee:testIamPermissions  
 
-[debug] [2019-10-30T01:46:58.823Z] <<< HTTP RESPONSE 200
-[debug] [2019-10-30T01:46:58.826Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee  
+[debug] [2019-11-04T01:11:38.304Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-04T01:11:38.307Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee  
  
-[debug] [2019-10-30T01:47:00.051Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/Users/dirceupaukajunior/Desktop/balao'...
-[info] 
-[debug] [2019-10-30T01:47:00.054Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee/webApps/-/config  
- 
-[debug] [2019-10-30T01:47:01.688Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-[info] Shutting down...
-[debug] [2019-10-30T02:14:55.517Z] ----------------------------------------------------------------------
-[debug] [2019-10-30T02:14:55.519Z] Command:       /usr/local/Cellar/node/12.10.0/bin/node /usr/local/bin/firebase serve
-[debug] [2019-10-30T02:14:55.519Z] CLI Version:   7.6.2
-[debug] [2019-10-30T02:14:55.520Z] Platform:      darwin
-[debug] [2019-10-30T02:14:55.520Z] Node Version:  v12.10.0
-[debug] [2019-10-30T02:14:55.520Z] Time:          Tue Oct 29 2019 23:14:55 GMT-0300 (Horário Padrão de Brasília)
-[debug] [2019-10-30T02:14:55.521Z] ----------------------------------------------------------------------
-[debug] [2019-10-30T02:14:55.521Z] 
-[debug] [2019-10-30T02:14:55.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-10-30T02:14:55.532Z] > authorizing via signed-in user
-[debug] [2019-10-30T02:14:55.533Z] [iam] checking project notificacao-lomadee for permissions ["firebase.projects.get"]
-[debug] [2019-10-30T02:14:55.534Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/notificacao-lomadee:testIamPermissions  
-
-[debug] [2019-10-30T02:14:56.761Z] <<< HTTP RESPONSE 200
-[debug] [2019-10-30T02:14:56.764Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee  
- 
-[debug] [2019-10-30T02:14:57.452Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-04T01:11:39.840Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/dirceupaukajunior/Desktop/notificacao-lomadee'...
 [info] 
-[debug] [2019-10-30T02:14:57.455Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee/webApps/-/config  
+[debug] [2019-11-04T01:11:39.843Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/notificacao-lomadee/webApps/-/config  
  
-[debug] [2019-10-30T02:14:58.068Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-04T01:11:41.367Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
