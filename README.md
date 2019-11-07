@@ -13,9 +13,9 @@ Em Fevereiro de 2011 eu e o [Mikael](https://github.com/mikaelcarrara) desenvolv
 ### Mobile
 <img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/mobile.png" width="308" />
 
-Posteriormente a ferramenta foi redesenhada para um formato único, que se ajusta ao espaço disponível ou dispositivo do visitante, conhecido por "[design responsivo](https://github.com/dirceup/vitrine-design-responsivo)". O formato "alert" havia sido descontinuado desde então.
+Posteriormente a ferramenta foi redesenhada para um formato único, que se ajusta ao espaço disponível ou dispositivo do visitante, conhecido por "[Vitrine Para Design Responsivo](https://github.com/dirceup/vitrine-design-responsivo)". O formato "alert" havia sido descontinuado desde então.
 
-Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "Notificação Lomadee" e o design atual igual a imagem abaixo:
+**Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "Notificação Lomadee" e o design atual igual a imagem abaixo:**
 
 <img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/notificacao.png" width="346" />
 
@@ -28,7 +28,9 @@ Faça o cadastro e login na rede de afiliados [Lomadee](https://www.lomadee.com/
 | --------- | --------- | --------- | --------- | --------- |
 | IE10, IE11, Edge| | | |
 
-## Desenvolvedo
+## Desenvolvimento
+O formato possui um modelo de desenvolvimento colaborativo, baseado em código livre. Issues e Pull requests são bem-vindas.
+
 Os arquivos de desenvolvimento são src/notificacao.js (JavaScript) e src/style.css (CSS).
 
 Executando o comando `python build.py` dentro da pasta src/, os arquivos de produção são gerados dentro da pasta public/.
