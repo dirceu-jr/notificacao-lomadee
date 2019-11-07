@@ -16,6 +16,7 @@ Em Fevereiro de 2011 eu e o [Mikael](https://github.com/mikaelcarrara) desenvolv
 Posteriormente a ferramenta foi redesenhada para um formato único, que se ajusta ao espaço disponível ou dispositivo do visitante, conhecido por "[design responsivo](https://github.com/dirceup/vitrine-design-responsivo)". O formato "alert" havia sido descontinuado desde então.
 
 Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "Notificação Lomadee" e o design atual igual a imagem abaixo:
+
 <img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/notificacao.png" width="346" />
 
 ## Uso
