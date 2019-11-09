@@ -2,21 +2,11 @@
 "Notificação Lomadee" é um novo formato da rede de marketing de afiliados [Lomadee](https://www.lomadee.com/) que aparece quando o visitante lê uma página no navegador.
 
 ## História
-Em Fevereiro de 2011 eu e o [Mikael](https://github.com/mikaelcarrara) desenvolvemos um aplicativo para a Lomadee chamado "Widget Busca Ofertas". Inicialmente foram disponibilizados formatos pré-desenhados: widget, alert e mobile. Com o design das imagens abaixo:
+Em Fevereiro de 2011 eu e o [Mikael](https://github.com/mikaelcarrara) desenvolvemos um aplicativo para a Lomadee chamado "Widget Busca Ofertas". Inicialmente foram disponibilizados formatos pré-desenhados: widget, alert e mobile.
 
-### Widget
-<img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/widget.png" width="966" />
-
-### Alert
-<img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/alert.png" width="354" />
-
-### Mobile
-<img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/mobile.png" width="308" />
-
-### Notificação Lomadee
 Posteriormente a ferramenta foi redesenhada para um formato único, que se ajusta ao espaço disponível ou dispositivo do visitante, conhecido por "[Vitrine Para Design Responsivo](https://github.com/dirceup/vitrine-design-responsivo)". O formato "alert" havia sido descontinuado desde então.
 
-**Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "Notificação Lomadee" e o design atual igual a imagem abaixo:**
+Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "Notificação Lomadee" e o design atual igual a imagem abaixo:
 
 <img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/notificacao.png" width="346" />
 
