@@ -24,8 +24,10 @@ var __LomadeeNotificacaoJS = (function() {
         div = undefined,
         path = (document.location.href.match(/file:\//) ? './frameads.html' : 'https://community.lomadee.com/developers/notificacao_lomadee/frameads.html'),
         options = {},
-        categories_order = ['bestsellers', 77, 2852, 3673, 3671, 6424, 138, 6058, 126, 3606, 10232, 3661]
+        categories_order = ['bestsellers', 77, 2852, 6424, 138, 6058, 10232]
     ;
+
+    // categories_order = ['bestsellers', 77, 2852, 3673, 3671, 6424, 138, 6058, 126, 3606, 10232, 3661]
 
 
     function $(e) {
@@ -150,18 +152,19 @@ var __LomadeeNotificacaoJS = (function() {
                     }
                 }
             }
-            // px (products ids)
-            if (cookie_array[1]) {
-                var pxs = cookie_array[1].split("=");
-                if (pxs[1]) {
-                    var pxs_array = shuffle(pxs[1].split("|"));
-                    if (pxs_array[0]) {
-                        for (var i = 0; i < pxs_array.length; i++) {
-                            result.products.push(pxs_array[i]);
-                        }
-                    }
-                }
-            }
+
+            // // px (products ids)
+            // if (cookie_array[1]) {
+            //     var pxs = cookie_array[1].split("=");
+            //     if (pxs[1]) {
+            //         var pxs_array = shuffle(pxs[1].split("|"));
+            //         if (pxs_array[0]) {
+            //             for (var i = 0; i < pxs_array.length; i++) {
+            //                 result.products.push(pxs_array[i]);
+            //             }
+            //         }
+            //     }
+            // }
         }
 
         return result;
@@ -178,26 +181,29 @@ var __LomadeeNotificacaoJS = (function() {
                 render = [],
                 len = o.length
             ;
-
             // randomize
             o = shuffle(o);
             len = 1;
 
             for (var i = 0; i < len; i++) {
+                // console.log(o[i]);
                 // console.log(o[i].product);
                 var
                     abrv = "BRL",
                     installment = (o[i].installment && o[i].installment.quantity) ?
                         ("ou " + o[i].installment.quantity + "x de " + formatMoney(o[i].installment.value, abrv)) : "&nbsp;",
                     price = formatMoney(o[i].price, abrv),
-                    name = o[i].product.shortName || o[i].name
+                    name = o[i].name,
+                    thumbnail = o[i].thumbnail
                 ;
 
-                if (o[i].product.thumbnail && o[i].product.thumbnail.otherFormats[0]) {
-                    var thumbnail = o[i].product.thumbnail.otherFormats[0].url;
-                } else {
-                    var thumbnail = o[i].thumbnail;
-                }
+                // name = o[i].product.shortName || o[i].name
+
+                // if (o[i].product.thumbnail && o[i].product.thumbnail.otherFormats[0]) {
+                //     var thumbnail = o[i].product.thumbnail.otherFormats[0].url;
+                // } else {
+                //     var thumbnail = o[i].thumbnail;
+                // }
 
                 render.push(
                     "<li>",
@@ -340,12 +346,13 @@ var __LomadeeNotificacaoJS = (function() {
 
         var cookies = processCookies();
 
-        if (cookies.products.length > 0) {
-            var
-                product = shuffle(cookies.products)[0],
-                endpoint = "offer/_product/" + product
-            ;
-        } else if (cookies.categories.length > 0) {
+        // if (cookies.products.length > 0) {
+        //     var
+        //         product = shuffle(cookies.products)[0],
+        //         endpoint = "offer/_product/" + product
+        //     ;
+        // } else
+        if (cookies.categories.length > 0) {
             var
                 category = shuffle(cookies.categories)[0],
                 endpoint = "offer/_category/" + category
@@ -368,7 +375,7 @@ var __LomadeeNotificacaoJS = (function() {
                 sourceId: options['sourceId'] || default_source_id,
                 sort: 'bestsellers'
             },
-            url = "https://api.lomadee.com/v2/" + app_id + "/" + endpoint + "?" + paramsToQuery(options)
+            url = "https://api.lomadee.com/v3/" + app_id + "/" + endpoint + "?" + paramsToQuery(options)
         ;
 
         xhr(url, function(o) {
