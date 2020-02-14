@@ -24,7 +24,7 @@ var __LomadeeNotificacaoJS = (function() {
         div = undefined,
         path = (document.location.href.match(/file:\//) ? './frameads.html' : 'https://community.lomadee.com/developers/notificacao_lomadee/frameads.html'),
         options = {},
-        categories_order = ['bestsellers', 77, 2852, 6424, 138, 6058, 10232]
+        categories_order = ['bestsellers', 77, 2852, 6424, 138, 10232]
     ;
 
     // categories_order = ['bestsellers', 77, 2852, 3673, 3671, 6424, 138, 6058, 126, 3606, 10232, 3661]
