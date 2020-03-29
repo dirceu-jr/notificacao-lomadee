@@ -11,6 +11,7 @@ Posteriormente a ferramenta foi redesenhada para um formato único, que se ajust
 
 Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "Notificação Lomadee" e o design atual igual a imagem abaixo:
 
+## Exemplo
 <img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/notificacao.png" width="346" />
 
 ## Navegadores suportados
