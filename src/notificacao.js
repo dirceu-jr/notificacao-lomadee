@@ -23,10 +23,11 @@ var __LomadeeNotificacaoJS = (function() {
         iframe = undefined,
         div = undefined,
         path = (document.location.href.match(/file:\//) ? './frameads.html' : 'https://community.lomadee.com/developers/notificacao_lomadee/frameads.html'),
-        options = {},
-        categories_order = ['bestsellers', 77, 2852, 6424, 138, 10232]
+        options = {}
     ;
 
+    // used in order versions
+    // categories_order = ['bestsellers', 77, 2852, 6424, 138, 10232]
     // categories_order = ['bestsellers', 77, 2852, 3673, 3671, 6424, 138, 6058, 126, 3606, 10232, 3661]
 
 
@@ -153,6 +154,7 @@ var __LomadeeNotificacaoJS = (function() {
                 }
             }
 
+            // lomadee's V3 does not suport this query anymore
             // // px (products ids)
             // if (cookie_array[1]) {
             //     var pxs = cookie_array[1].split("=");
@@ -179,19 +181,20 @@ var __LomadeeNotificacaoJS = (function() {
 
             var
                 render = [],
-                len = o.length
+                len = 1
             ;
+
             // randomize
-            o = shuffle(o);
-            len = 1;
+            // o = shuffle(o);
+            // len = 1;
 
             for (var i = 0; i < len; i++) {
                 // console.log(o[i]);
                 // console.log(o[i].product);
                 var
                     abrv = "BRL",
-                    installment = (o[i].installment && o[i].installment.quantity) ?
-                        ("ou " + o[i].installment.quantity + "x de " + formatMoney(o[i].installment.value, abrv)) : "&nbsp;",
+                    installment_conditional = o[i].installment && o[i].installment.quantity && o[i].installment.quantity > 1,
+                    installment = installment_conditional ? ("ou " + o[i].installment.quantity + "x de " + formatMoney(o[i].installment.value, abrv)) : "&nbsp;",
                     price = formatMoney(o[i].price, abrv),
                     name = o[i].name,
                     thumbnail = o[i].thumbnail
@@ -346,6 +349,7 @@ var __LomadeeNotificacaoJS = (function() {
 
         var cookies = processCookies();
 
+        // lomadee's V3 does not suport this query anymore
         // if (cookies.products.length > 0) {
         //     var
         //         product = shuffle(cookies.products)[0],
@@ -358,20 +362,23 @@ var __LomadeeNotificacaoJS = (function() {
                 endpoint = "offer/_category/" + category
             ;
         } else {
-            var
-                category = shuffle(categories_order)[0],
-                endpoint = "offer/_category/" + category
-            ;
+            var endpoint = "offer/_bestsellers";
 
-            if (category == "bestsellers") {
-                endpoint = "offer/_bestsellers";
-            }
+            // commented code was used in an order versions
+            // var
+            //     category = shuffle(categories_order)[0],
+            //     endpoint = "offer/_category/" + category
+            // ;
+            // if (category == "bestsellers") {
+            //     endpoint = "offer/_bestsellers";
+            // }
         }
 
         var
+            random_page = Math.floor(Math.random() * 100) + 1,
             options = {
-                page: 1,
-                size: 6,
+                page: random_page,
+                size: 2,
                 sourceId: options['sourceId'] || default_source_id,
                 sort: 'bestsellers'
             },
