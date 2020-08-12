@@ -7,7 +7,7 @@ output_file_name = "./public/notificacao-lomadee.min.js"
 os.system("java -jar ./tools/yuicompressor-2.4.8.jar ./src/style.css -o ./public/style-min.css -v")
 
 # minimize JS using Closure Compiler - stores at ./staging/
-os.system("java -jar ./tools/closure-compiler-v20190929.jar --js ./src/notificacao.js --js_output_file " + output_file_name)
+os.system("java -jar ./tools/closure-compiler-v20200719.jar --js ./src/notificacao.js --js_output_file " + output_file_name)
 
 # open css file
 css_file = open("./public/style-min.css", "r")
