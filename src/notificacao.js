@@ -26,11 +26,6 @@ var __LomadeeNotificacaoJS = (function() {
         options = {}
     ;
 
-    // used in order versions
-    // categories_order = ['bestsellers', 77, 2852, 6424, 138, 10232]
-    // categories_order = ['bestsellers', 77, 2852, 3673, 3671, 6424, 138, 6058, 126, 3606, 10232, 3661]
-
-
     function $(e) {
         return document.getElementById(e);
     }
@@ -277,8 +272,9 @@ var __LomadeeNotificacaoJS = (function() {
         // console.log(scroll_percent);
 
         // 40 is fine for Desktop but not for mobile!
-        // let's try with 20%
-        if (scroll_percent > 20 && opened !== 1) {
+        // let's try with 10%
+
+        if (scroll_percent > 10 && opened !== 1) {
             openAd();
         }
     }
@@ -363,15 +359,6 @@ var __LomadeeNotificacaoJS = (function() {
             ;
         } else {
             var endpoint = "offer/_bestsellers";
-
-            // commented code was used in an order versions
-            // var
-            //     category = shuffle(categories_order)[0],
-            //     endpoint = "offer/_category/" + category
-            // ;
-            // if (category == "bestsellers") {
-            //     endpoint = "offer/_bestsellers";
-            // }
         }
 
         var
