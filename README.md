@@ -18,7 +18,7 @@ Em Novembro de 2019 o formato "*alert*" foi redesenhado e voltou a ser disponibi
 | IE10, IE11, Edge|✔|✔|✔|✔
 
 ## Desenvolvimento
-O formato possui um modelo de desenvolvimento colaborativo, baseado em código livre. Issues e Pull requests são bem-vindas.
+O formato possui um modelo de desenvolvimento colaborativo, baseado em código livre.
 
 Os arquivos de desenvolvimento são `src/notificacao.js` (JavaScript) e `src/style.css` (CSS).
 
