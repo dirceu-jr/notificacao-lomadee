@@ -1,15 +1,12 @@
 # Notificação Lomadee :speech_balloon:
-"Notificação Lomadee" é um novo formato da rede de marketing de afiliados [Lomadee](https://www.lomadee.com/) que aparece quando o visitante lê uma página no navegador.
-
-## Uso
-Faça o cadastro e login na rede de afiliados [Lomadee](https://www.lomadee.com/), entre no menu "Formatos" e procure por "Notificação Lomadee".
+"Notificação Lomadee" é um formato da rede de marketing de afiliados [Lomadee](https://www.lomadee.com/) que aparece quando o visitante lê uma página no navegador.
 
 ## História
-Em Fevereiro de 2011 eu e o [Mikael](https://github.com/mikaelcarrara) desenvolvemos um aplicativo para a Lomadee chamado "Widget Busca Ofertas". Inicialmente foram disponibilizados formatos pré-desenhados: widget, alert e mobile.
+Em Fevereiro de 2011 eu e o designer [Mikael Carrara](https://github.com/mikaelcarrara) desenvolvemos um formato para a Lomadee chamado "Widget Busca Ofertas". Inicialmente foram disponibilizados formatos pré-desenhados: *widget*, *alert* e *mobile*.
 
-Posteriormente a ferramenta foi redesenhada para um formato único, que se ajusta ao espaço disponível ou dispositivo do visitante, conhecido por "[Vitrine Para Design Responsivo](https://github.com/dirceup/vitrine-design-responsivo)". O formato "alert" havia sido descontinuado desde então.
+Posteriormente a ferramenta foi redesenhada para um formato único, que se ajusta ao espaço disponível ou dispositivo do visitante, conhecido por "[Vitrine Para Design Responsivo](https://github.com/dirceup/vitrine-design-responsivo)". O formato "*alert*" havia sido descontinuado desde então.
 
-Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "Notificação Lomadee" e o design atual igual a imagem abaixo:
+Em Novembro de 2019 o formato "*alert*" foi redesenhado e voltou a ser disponibilizado na Lomadee com o nome de "**Notificação Lomadee**" e o design atual igual a imagem abaixo:
 
 ## Exemplo
 <img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/notificacao.png" width="346" />
@@ -23,12 +20,6 @@ Em Novembro de 2019 o formato "alert" foi redesenhado e voltou a ser disponibili
 ## Desenvolvimento
 O formato possui um modelo de desenvolvimento colaborativo, baseado em código livre. Issues e Pull requests são bem-vindas.
 
-Os arquivos de desenvolvimento são src/notificacao.js (JavaScript) e src/style.css (CSS).
+Os arquivos de desenvolvimento são `src/notificacao.js` (JavaScript) e `src/style.css` (CSS).
 
 Executando o comando `python build.py` dentro da pasta src/, os arquivos de produção são gerados dentro da pasta public/.
-
-# Time
-
-Programação: Dirceu;
-
-Desenho da interface: [Mikael Carrara](https://github.com/mikaelcarrara)
