@@ -10,7 +10,7 @@ Em Novembro de 2019 o formato "*alert*" foi redesenhado e voltou a ser disponibi
 
 <img src="https://raw.githubusercontent.com/dirceup/notificacao-lomadee/master/imgs/notificacao.png" width="346" />
 
-No ínicio de 2021 pedimos a remoção da distribuição pelo Lomadee devido a baixa relevância dos produtos exibidos.
+No início de 2021 pedimos a remoção da distribuição pelo Lomadee devido a baixa relevância dos produtos exibidos.
 
 ## Navegadores suportados
 
