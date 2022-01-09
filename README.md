@@ -12,15 +12,13 @@ Em Novembro de 2019 o formato "*alert*" foi redesenhado e voltou a ser disponibi
 
 No início de 2021 pedimos a remoção da distribuição pelo Lomadee devido a baixa relevância dos produtos exibidos.
 
+## Desenvolvimento
+O código do formato foi publicado no GitHub. Os arquivos de desenvolvimento são `src/notificacao.js` (JavaScript) e `src/style.css` (CSS).
+
+Executando o comando `python build.py` dentro da pasta src/, os arquivos de produção são gerados dentro da pasta public/.
+
 ## Navegadores suportados
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br>iOS Safari |
 | --------- | --------- | --------- | --------- | --------- |
 | IE10, IE11, Edge|✔|✔|✔|✔
-
-## Desenvolvimento
-O formato possui um modelo de desenvolvimento colaborativo, baseado em código livre.
-
-Os arquivos de desenvolvimento são `src/notificacao.js` (JavaScript) e `src/style.css` (CSS).
-
-Executando o comando `python build.py` dentro da pasta src/, os arquivos de produção são gerados dentro da pasta public/.
